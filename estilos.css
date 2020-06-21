@@ -45,6 +45,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding-top: 35px;
 }
 a {
     color: black;
@@ -125,4 +127,113 @@ header {
     font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
+}
+.barra-arriba {
+    font-weight: bold;
+    font-size: 20px
+}
+
+
+
+.site-nav {
+    margin: 0 0 0 -12px;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden
+}
+
+.site-nav>.site-nav__item {
+    display: inline-block;
+    font-size: 16px
+}
+
+.site-nav .site-nav__link {
+    display: block;
+    text-decoration: none
+}
+
+.site-nav>.site-nav__item>.site-nav__link {
+    position: relative;
+    padding: 0 15px 12px 15px;
+    color: #ffcbd3
+}
+
+.site-nav>.site-nav__item>.site-nav__link:hover {
+    color: #ffcbd3
+}
+
+.site-nav .site-nav__invisible {
+    right: 0
+}
+
+.site-nav>.site-nav__item>.site-nav__link::after {
+    background-color: #ffcbd3;
+    bottom: 0;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transform: scaleY(0);
+    transition: transform 0.25s;
+    transform-origin: bottom;
+    width: 100%
+}
+
+.site-nav__item:hover .site-nav__link:after {
+    transform: scaleY(1)
+}
+
+.site-nav__item.site-nav--active .site-nav__link:after {
+    transform: scaleY(1)
+}
+
+.site-nav__icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 0.1em;
+    height: 1em;
+    width: 18px
+}
+
+.site-nav__icon .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    height: 18px;
+    width: 18px
+}
+
+.site-nav__dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 6;
+    background-color: #262021;
+    font-size: 14px;
+    color: rgba(255,254,255,0.7);
+    white-space: normal;
+    width: 240px;
+    border-bottom: 3px solid #fffeff;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15)
+}
+
+.site-nav__dropdown--with-promo {
+    width: 480px
+}
+
+.site-nav__item--has-dropdown.open>.site-nav__dropdown,.no-js .site-nav__item--has-dropdown:hover>.site-nav__dropdown {
+    display: block
+}
+
+.site-nav .site-nav__dropdown-heading,.site-nav .site-nav__dropdown-link[href="#"] {
+    margin: 0 0 0.25em;
+    font-size: 16px;
+    color: #fffeff
+}
+
+.site-nav .site-nav__dropdown-heading:hover,.site-nav .site-nav__dropdown-link[href="#"]:hover {
+    color: #fffeff
 }
