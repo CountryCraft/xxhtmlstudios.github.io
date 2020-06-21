@@ -1,0 +1,128 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(https://i.imgur.com/Xg6d6fY.png) no-repeat center fixed;
+    background-size: cover;
+}
+h1 {    
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+h2 {
+    color: green;
+    font-size: 25px;
+    text-align: center;
+}
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+h4 {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+p {
+    color: black
+}
+
+.cabecera {
+    background-color: rgb(20, 141, 211);
+    height: 150px;
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.content {
+    background-color: #ffffff;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 100%
+    }
+}
+
+header {
+    margin-bottom: 20px;
+}
+.miboton {
+    display: block;
+    width: 250px;
+    height: 100px;
+    background: green;
+    color: white;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 99px;
+}
+
+.miboton:hover {
+    background: rgb(3, 92, 3);
+    color: #ddd;
+}
+.pie {
+    background-color: rgb(71, 69, 69);
+    height: 200px;
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.elpie {
+    text-align: left;
+    font-size: 10px
+}
+.cabecera-text {
+    text-align: left;
+}
+.alerta {
+    background-color: rgba(240, 73, 73, 0.829);
+    height: 22px;
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alerta-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
