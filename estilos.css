@@ -47,6 +47,7 @@ p {
     align-items: center;
     flex-direction: column;
     padding-top: 35px;
+    margin-bottom: 0px
 }
 a {
     color: black;
@@ -236,4 +237,15 @@ header {
 
 .site-nav .site-nav__dropdown-heading:hover,.site-nav .site-nav__dropdown-link[href="#"]:hover {
     color: #fffeff
+}
+.linea-header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(21, 123, 182);
+    margin-bottom: 20px;
+}
+.linea {
+    height: 3px;
+    background-color: black;
+    width: 100%;
 }
