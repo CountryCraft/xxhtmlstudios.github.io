@@ -251,19 +251,21 @@ header {
 .sub-menu {
     display: flex;
     list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
 }
 .sub-menu-item {
     width: 150px
 }
 .sub-menu-item-link {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     transition: color 0.5s;
     text-decoration: none;
 }
 
 .sub-menu-item-link:visited {
-    font-size: 20px;
     color: white;
     text-decoration: none;
 }
@@ -271,4 +273,52 @@ header {
 .sub-menu-item-link:hover {
     color: black;
     text-decoration: none;
+}
+.proximamente {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.proximamente-text {
+    text-align: center;
+}
+input:checked + .slider {
+    background-color: green!important;
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red!important;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+label {
+    cursor: default;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
