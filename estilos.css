@@ -168,7 +168,26 @@ header {
     justify-content: center;
     align-items: center;
     height: 80px;
-  
+}
+.novedades-text {
+    color: rgb(71, 67, 67);
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.novedades-link {
+    font-size: 40px;
+    color: black;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+.novedades-link:hover {
+    color: rgb(170, 163, 163);;
+    text-decoration: none;
 }
 .sub-menu-item {
     width: 150px
@@ -189,10 +208,10 @@ header {
     color: rgb(170, 163, 163);
     text-decoration: none;
 }
-.proximamente {
-    color: red;
+.novedades {
+    color: black;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
 }
 .proximamente-text {
