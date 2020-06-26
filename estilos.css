@@ -62,7 +62,7 @@ a {
     margin: 0 auto;
     border-radius: 8px;
     padding: 12px;
-    height:100%;
+    min-height: 300px;
 }
 
 header {
@@ -322,8 +322,18 @@ header {
 .footer-ul {
     list-style: none;
     text-decoration: none;
+    padding: 0;
 }
-
+.proximamente-text-1 {
+    color: rgb(190, 54, 54);
+    font-size: 30px;
+    text-align: center;
+}
+.proximamente-text-2 {
+    color: rgb(71, 67, 67);
+    font-size: 20px;
+    text-align: center;
+}
 @media (max-width: 768px) {
     .content {
         width: 100%
@@ -335,9 +345,20 @@ header {
         margin-bottom: 0px;
     }
     .linea-header {
-        height: auto;
+        height: 140px;
     }
     .sub-menu-item {
          width: auto;
+    }
+    .novedades {
+        font-size: 35px;
+        padding: 0;
+    }
+    .novedades-text {
+        font-size: 30px;
+        padding: 0;
+    }
+    .novedades-link {
+        font-size: inherit;
     }
 }
