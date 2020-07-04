@@ -577,7 +577,8 @@ body.change-color {
         text-align: center;
     }
     .switch-button {
-        margin-left: 60px;
+        display: flex;
+        justify-content: center;
     }
     .cards {
         flex-direction: column;
