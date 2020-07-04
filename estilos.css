@@ -407,12 +407,12 @@ header {
 }
 .cards-link {
     font-size: 20px;
-    color: rgb(218, 211, 211);
+    color: black;
     transition: color 0.5s;
     text-decoration: none;
 }
 .cards-link:hover {
-    color: black;
+    color: rgb(218, 211, 211);
     text-decoration: none;
 }
 
@@ -473,6 +473,12 @@ body.change-color {
 .change-color .novedades-text{
     color: rgb(218, 211, 211);
     transition: all 1s ease;
+}
+.change-color .cards-link {
+    font-size: 20px;
+    color: rgb(218, 211, 211);
+    transition: color 0.5s;
+    text-decoration: none;
 }
 
 /*boton switch*/
