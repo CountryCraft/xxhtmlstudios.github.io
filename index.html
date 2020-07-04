@@ -1,74 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<title>XxHTML Studios</title>
-<meta charset="utf-8" />
-<meta name="description" content="Debe contener las palabras clave, tratar de atraer clicks y de longitud entre 150 y 160 caracteres">
-<link rel="stylesheet" href="estilos.css" />
-<!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<link  rel="icon" href="logo_isaac.png" type="image/png" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<head>
+  <title>XxHTML Studios</title>
+  <meta charset="utf-8" />
+  <meta name="description"
+    content="Debe contener las palabras clave, tratar de atraer clicks y de longitud entre 150 y 160 caracteres">
+  <link rel="stylesheet" href="estilos.css" />
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/logo_isaac.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase/init.js"></script>
 </head>
- 
+
 <body>
-   <div class="alerta">
-    <h1><span class="alerta-text2">¡Nueva versión Alpha! V.2</span> <a class="alerta-text" href="novedades.html">Cambios</a></h1></div>
-    <header class="cabecera">
+  <div class="alerta">
+    <h1><span class="alerta-text2">¡Estamos arreglando errores de móvil!</span></h1>
+  </div>
+  <header class="cabecera">
     <h1 class="cabecera-text">XxHTML Studios</h1>
-    </header>
-    <div class="linea"> </div>
-    <div class="linea-header">
-       <ul class="sub-menu">
-          <li class="sub-menu-item">
-            <a class="sub-menu-item-link" href="..">Home</a>
-          </li>
-          <li class="sub-menu-item">
-            <a class="sub-menu-item-link" href="roblox">Roblox...</a>
-          </li>
-          <li class="sub-menu-item">
-            <a class="sub-menu-item-link" href="novedades">Novedades</a>
-          </li>
-       </ul>
+  </header>
+  <div class="linea"> </div>
+  <div class="linea-header">
+    <ul class="sub-menu">
+      <li class="sub-menu-item">
+        <a class="sub-menu-item-link" href="..">Home</a>
+      </li>
+      <li class="sub-menu-item">
+        <a class="sub-menu-item-link" href="roblox">Roblox...</a>
+      </li>
+      <li class="sub-menu-item">
+        <a class="sub-menu-item-link" href="novedades">Novedades</a>
+      </li>
+    </ul>
+  </div>
+  <div class="linea"> </div>
+  </div>
+
+  <section class="content">
+    <div class="ancho-maximo">
+      <h1 class="home-title">¡Bienvenido!</h1>
+      <h2 class="home-text">A XxHTML Studios</h1>
+        <div class="cards">
+          <div class="card-300">
+            <p class="home-text-1">Roblox</h1>
+            <p class="home-text-2">Próximamente...</h1>
+          </div>
+          <div class="card-300">
+            <p class="home-text-1">Actualmente estás en:</h1>
+            <p class="home-text-2">Home</h1>
+          </div>
+
+          <div class="card-300">
+            <p class="home-text-1">Novedades de web:</h1>
+            <p class="home-text-2"><a class="cards-link" href="../novedades">Ir a Novedades</a></h1>
+          </div>
+        </div>
     </div>
-    <div class="linea"> </div>
-      <section class="content"></section>
-    <footer class="footer">
-      <div class="container">
-        <ul class="footer-ul">
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-ul">
+        <li class="footer-item">
+          <h2 class="footer-ul-title">Más:</h2>
+        </li>
+        <li class="footer-item">
+         <p class="footer-ul-link centered"><a href="https://google.com">Filtraciones</a></p>
+       </li>
+       <li class="footer-item">
+         <p class="footer-ul-link centered"><a href="https://google.com">Ideas para la web</a></p>
+       </li>
+       <li class="footer-item">
+           <h2 class="footer-ul-title centered">Modo Oscuro</h2>
+      </li>
+       <li>
+        <div class="switch-button">
+          <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox btn-action">
+          <label for="switch-label" class="switch-button__label"></label>
+      </div>
+       </li>
+       </ul>
+
+       <ul class="footer-ul">
          <li class="footer-item">
-           <h1 class="footer-ul-title">Redes sociales:</h1>
+           <h2 class="footer-ul-title">Redes sociales:</h2>
          </li>
          <li class="footer-item">
-          <h1 class="footer-ul-link"><a href="https://google.com">·Twitter·</a></h1>
+          <p class="footer-ul-link centered"><a href="https://twitter.com/XxHTMLStudios">·Twitter·</a></p>
         </li>
+        <li class="footer-item">
+         <p class="footer-ul-link centered"><a href="https://www.instagram.com/xxhtml_studios/">·Instagram·</a></p>
+       </li>
         </ul>
 
         <ul class="footer-ul">
-          <li class="footer-item">
-            <h1 class="footer-ul-title">Redes sociales:</h1>
-          </li>
-          <li class="footer-item">
-           <h1 class="footer-ul-link"><a href="https://google.com">·Twitter·</a></h1>
+         <li class="footer-item">
+           <h2 class="footer-ul-title">Nuestro contacto:</h2>
          </li>
-         </ul>
+         <li class="footer-item">
+           <p class="footer-ul-link centered-contactanos"><a href="mailto:xxhtmlstudios@gmail.com">xxhtmlstudios@gmail.com</a></p>
+         </p>
+        </li>
+        </ul>
+     </div>
+   </footer>
 
-         <ul class="footer-ul">
-          <li class="footer-item">
-            <h1 class="footer-ul-title">Nuestro contacto:</h1>
-          </li>
-          <li class="footer-item">
-            <h1 class="footer-ul-link-contactanos"><a href="mailto:xxhtmlstudios@gmail.com">xxhtmlstudios@gmail.com</a></h1>
-           </h1>
-         </li>
-         </ul>
-      </div>
-    </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        console.log('hola soy javascript...', features)
+        document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+  <script src="main.js"></script>
 </body>
 </html>
-

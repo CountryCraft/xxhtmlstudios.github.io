@@ -37,9 +37,13 @@ h4 {
     font-size: 20px;
 }
 p {
-    color: black
+    color: black;
+    margin: 0;
+    margin-bottom: 0!important;
 }
-
+.ancho-maximo {
+    max-width: 1200px;
+}
 .cabecera {
     background-color: rgb(255, 255, 255);
     height: 150px;
@@ -275,9 +279,8 @@ header {
     color: black;
 }
 .footer {
-    height: 200px;
     background-color: rgb(90, 86, 86);
-    height: 200px;
+    height: 215px;
     background-color: rgb(90, 86, 86);
     width: 100%;
     padding-top: 10px
@@ -355,6 +358,170 @@ header {
     font-size: 20px;
     text-align: center;
 }
+.home-title {
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+.home-text {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+.home-text-1 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    right: 100px;
+}
+.home-text-2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+.home-text-right {
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    margin-top: 10px;
+    right: 100px;
+}
+
+
+.centered {
+    text-align: center;
+}
+/*Cards*/
+
+.card-300 {
+    width: 300px;
+    margin: 10px;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+.cards-link {
+    font-size: 20px;
+    color: rgb(218, 211, 211);
+    transition: color 0.5s;
+    text-decoration: none;
+}
+.cards-link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/*Cambio de color*/
+
+body.change-color {
+    background-color: rgb(116, 116, 116);
+    transition: all 1s ease;
+}
+
+.change-color .content {
+    background-color: rgb(116, 116, 116);
+    transition: all 1s ease;
+}
+
+.change-color .home-title {
+    color: rgb(218, 211, 211);
+    transition: all 1s ease;
+}
+
+.change-color .home-text {
+    color: rgb(218, 211, 211);
+    transition: all 1s ease;
+}
+.change-color .home-text-2 {
+    color: rgb(218, 211, 211);
+    transition: all 1s ease;
+}
+
+.change-color .home-text-1 {
+    color: rgb(218, 211, 211);
+    transition: all 1s ease;
+}
+.change-color .cabecera{
+    background-color: rgb(116, 116, 116);
+    transition: all 1s ease;
+}
+.change-color .cabecera-text{
+    color: white;
+    transition: all 1s ease;
+}
+.change-color .linea-header{
+    background-color: rgb(138, 138, 138);
+    transition: all 1s ease;
+}
+.change-color .proximamente-text-1{
+    color: rgb(218, 211, 211);
+    transition: all 1s ease;
+}
+.change-color .proximamente-text-2{
+    color: rgb(218, 211, 211);
+    transition: all 1s ease;
+}
+.change-color .novedades{
+    color: rgb(218, 211, 211);
+    transition: all 1s ease;
+}
+.change-color .novedades-text{
+    color: rgb(218, 211, 211);
+    transition: all 1s ease;
+}
+
+/*boton switch*/
+:root {
+    --color-green: #00a878;
+    --color-red: #fe5e41;
+    --color-button: #fdffff;
+    --color-black: #000;
+}
+.switch-button {
+    display: inline-block;
+    margin-top: 10px;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: var(--color-red);
+    width: 200px;
+    height: 40px;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 1s;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+    transition: 1s;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(160px);
+} 
+
+
 @media (max-width: 768px) {
     .content {
         width: 100%;
@@ -388,4 +555,26 @@ header {
     .footer {
         height: unset;
     }
+    .home-text-left {
+        text-align: center;
+    }
+    .home-text-2 {
+        text-align: center;
+    }
+    .card-300-2 {
+        margin: 0 auto;
+    }
+    .card-300 {
+        margin: 0 auto;
+    }
+    .footer-ul-link {
+        text-align: center;
+    }
+    .switch-button {
+        margin-left: 60px;
+    }
+    .cards {
+        flex-direction: column;
+    }
 }
+
