@@ -22,7 +22,7 @@ h1 {
     text-align: center;
 }
 h2 {
-    color: green;
+    color: black;
     font-size: 25px;
     text-align: center;
 }
@@ -480,6 +480,25 @@ body.change-color {
     transition: color 0.5s;
     text-decoration: none;
 }
+.change-color .filtraciones-title {
+    color: rgb(218, 211, 211);
+}
+.change-color .filtraciones-text {
+    color: rgb(218, 211, 211);
+}
+.change-color .filtraciones {
+    color: rgb(218, 211, 211);
+}
+.change-color .filtraciones-2 {
+    color: rgb(218, 211, 211);
+}
+.change-color .filtraciones-3 {
+    color: rgb(218, 211, 211);
+}
+.change-color .filtraciones-text-2 {
+    color: rgb(218, 211, 211);
+}
+
 
 /*boton switch*/
 :root {
@@ -525,9 +544,107 @@ body.change-color {
 }
 .switch-button .switch-button__checkbox:checked + .switch-button__label:before {
     transform: translateX(160px);
-} 
+}
+/*XMODAL*/
+.xmodal {
+    height: 200px;
+    border: 1px solid black;
+    position: fixed;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.hidden {
+    display:none;
+}
+.backdrop {
+    background: rgba(0, 0, 0, 0.37);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.atention {
+    font-size: 30px;
+    color: rgb(190, 54, 54);
+}
+.xmodal-text {
+    font-size: 20px;
+    color: black;
+}
 
 
+
+/*CLOSE BUTTON*/
+.btn-cerrar-modal {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(72, 179, 72);
+    border-radius: 100px;
+    border: 0px solid;
+}
+.btn-cerrar-modal:focus {
+    outline: 0;
+}
+.x {
+    font-size: 30px;
+}
+/*FILTRACIONES*/
+.filtraciones-title {
+    text-align: center;
+    font-size: 60px;
+    color: black
+}
+.filtraciones-text {
+    text-align: center;
+    font-size: 30px;
+    color: black
+}
+.filtraciones {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    right: 100px;
+}
+.filtraciones-2 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    right: 100px;
+}
+.filtraciones-3 {
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    margin-top: 10px;
+    right: 100px;
+}
+.filtraciones-cards {
+    display: flex;
+    justify-content: space-around;
+}
+.filtraciones-card-300 {
+    width: 300px;
+    margin: 10px;
+}
+.filtraciones-text-2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+/*MEDIA QUERY*/
 @media (max-width: 768px) {
     .content {
         width: 100%;
@@ -583,5 +700,10 @@ body.change-color {
     .cards {
         flex-direction: column;
     }
+    .filtraciones-cards {
+        flex-direction: column;
+    }
+    .filtraciones-3 {
+        text-align: center;
+    }
 }
-

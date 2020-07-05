@@ -27,11 +27,11 @@
   <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+  <!-- script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script> -->
 
   <!-- Add Firebase products that you want to use -->
-  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase/init.js"></script>
+ <!--  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase/init.js"></script> -->
 </head>
 
 <body>
@@ -86,10 +86,10 @@
           <h2 class="footer-ul-title">Más:</h2>
         </li>
         <li class="footer-item">
-         <p class="footer-ul-link centered"><a href="https://google.com">Filtraciones</a></p>
+         <p class="footer-ul-link centered"><a href="../filtraciones">Filtraciones</a></p>
        </li>
        <li class="footer-item">
-         <p class="footer-ul-link centered"><a href="https://google.com">Ideas para la web</a></p>
+         <p class="footer-ul-link centered"><a href="#">Ideas para la web</a></p>
        </li>
        <li class="footer-item">
            <h2 class="footer-ul-title centered">Modo Oscuro</h2>
@@ -126,7 +126,15 @@
      </div>
    </footer>
 
-  <script>
+  <div class="xmodal-wrapper">
+    <div class="backdrop"></div>
+    <div class="xmodal">
+     <h1 class="atention">[ATENCIÓN]</h1>
+     <p class="xmodal-text">Esta página web está en construcción y es posible que haya errores.</p>
+     <button class="btn-cerrar-modal"><p class="x">X</p></button>
+   </div>
+  </div>
+ <!--  <script>
     document.addEventListener('DOMContentLoaded', function () {
       // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
       // // The Firebase SDK is initialized and available here!
@@ -148,7 +156,7 @@
         document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
       }
     });
-  </script>
+  </script> -->
   <script src="main.js"></script>
 </body>
 </html>
